@@ -1,0 +1,137 @@
+.dash-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3rem;
+}
+.card-single {
+  background: whitesmoke;
+  border-radius: 7px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.card-body {
+  padding: 1.3rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.card-body span {
+  font-size: 1.5rem;
+  color: #777;
+  padding-right: 1.4rem;
+}
+
+.card-body h5 {
+  color: var(--text-grey);
+  font-size: 1rem;
+}
+
+.card-body h4 {
+  color: var(--color-dark);
+  font-size: 1.1rem;
+  margin-top: .2rem;
+}
+
+.card-footer {
+  padding: .2rem 1rem;
+  background-color: royalblue;
+}
+
+.card-footer a {
+  color: rgb(0, 0, 0);
+}
+
+.recent {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.activity-grid {
+  display: grid;
+  grid-template-columns: 55% 25%;
+  grid-column-gap: 1.5rem;
+}
+
+.activity-card,
+.summary-card,
+.bday-card {
+  background: rgb(158, 205, 243);
+  border-radius: 7px;
+}
+
+.activity-card h3 {
+  color: rgb(95, 95, 95);
+  margin: 0.5rem;
+}
+
+.activity-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.activity-card thead {
+  background: #efefef;
+  text-align: center;
+}
+
+th, td {
+    font-size: .9rem;
+    padding: 1rem 1rem;
+    color: black;
+    text-align: center;
+}
+
+td {
+    font-size: .8rem;
+}
+
+tbody tr:nth-child(even) {
+    background: #efefef;
+}
+
+.badge {
+    padding: .2rem 1rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: .7rem;
+}
+
+.badge.success {
+    background: #DEF7EC;
+    color: var(--main-color);
+}
+
+.badge.warning {
+    background: #F0F6B2;
+    color: orange;
+}
+@media only screen and (max-width: 860px) {
+  .dash-cards {
+      grid-template-columns: repeat(2,1fr);
+  }
+  
+  .card-single {
+      margin-bottom: 1rem;
+  }
+  
+  .activity-grid {
+      display: block;
+  }
+  
+  .summary {
+      margin-top: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .dash-cards {
+      grid-template-columns: 100%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  main {
+      padding-left: 1rem;
+      padding-right: 1rem;
+  }
+}
