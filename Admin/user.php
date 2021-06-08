@@ -1,14 +1,4 @@
-<?php 
-$username="root";  
-$password="";  
-$hostname = "localhost";  
-//connection string with database  
-$dbhandle = mysqli_connect($hostname, $username, $password)  
-or die("Unable to connect to MySQL");  
-echo "";  
-// connect with database  
-$selected = mysqli_select_db($dbhandle, "kindergarten")  
-or die("Could not select examples");  
+<?php <?php include("../User/db_conn.php"); ;  
 
 session_start();
 
@@ -48,7 +38,7 @@ $ttlStudent = mysqli_num_rows($newStud);
         <script src="https://kit.fontawesome.com/7a009050af.js" crossorigin="anonymous"></script>
 
         <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'] ?>/kindergarten-system/src/text.css">
+        <link rel="stylesheet" href="/src/text.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -211,7 +201,7 @@ $ttlStudent = mysqli_num_rows($newStud);
               })
         </script>
         <!--===== MAIN JS =====-->
-        <script src="<?php echo 'http://'.$_SERVER['SERVER_NAME'] ?>/kindergarten-system/src/main.js"></script>
+        <script src="/src/main.js"></script>
     </body>
 </html>
 
