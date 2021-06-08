@@ -1,14 +1,4 @@
-<?php
-$username="root";  
-$password="";  
-$hostname = "localhost";  
-//connection string with database  
-$dbhandle = mysqli_connect($hostname, $username, $password)  
-or die("Unable to connect to MySQL");  
-echo "";  
-// connect with database  
-$selected = mysqli_select_db($dbhandle, "kindergarten")  
-or die("Could not select examples");
+<?php include("/User/db_conn.php");
 
 $nama = $_POST['std_nama'];
 $umur = $_POST['std_umur'];
@@ -33,13 +23,13 @@ $insert = mysqli_query($dbhandle, "INSERT INTO students (name,idNo,age,dob,gende
 
 if($insert===TRUE)
 {
-	header('Location: http://'.$_SERVER['SERVER_NAME'].'/kindergarten-system/Admin/maklumat%20murid.php');
+	header('Location: /Admin/maklumat%20murid.php');
 	exit;
 	echo "Data Successfully Save";
 }						
 else
 {
-	header('Location: http://'.$_SERVER['SERVER_NAME'].'/kindergarten-system/Admin/maklumat%20murid.php');
+	header('Location: /Admin/maklumat%20murid.php');
 	exit;
   	echo"The query did not run";
 } 
