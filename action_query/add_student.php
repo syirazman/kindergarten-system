@@ -34,13 +34,13 @@ $insert = mysqli_query($dbhandle, "INSERT INTO students (name,mykid,idNo,age,dob
 
 if($insert===TRUE)
 {
-	// header('Location: http://'.$_SERVER['SERVER_NAME'].'/pendaftaran_pelajar');
+	// header('Location: /pendaftaran_pelajar');
 	// exit;
 	return "success";
 }						
 else
 {
-	// header('Location: http://'.$_SERVER['SERVER_NAME'].'/pendaftaran_pelajar');
+	// header('Location: /pendaftaran_pelajar');
 	// exit;
   	return "error";
 } 
