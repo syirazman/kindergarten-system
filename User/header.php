@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/7a009050af.js" crossorigin="anonymous"></script>
     <title>Welcome to Tabika Kemas Penjara Kajang</title>
 
-    <link href=" /User/src/css/bootstrap.min.css" rel="stylesheet">
+    <link href="src/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   </head>
