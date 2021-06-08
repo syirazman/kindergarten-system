@@ -21,13 +21,13 @@ $insert = mysqli_query($dbhandle, "INSERT INTO class_activity (class,topic,time,
 // echo json_encode($_POST);
 if($insert===TRUE)
 {
-	header('Location: http://'.$_SERVER['SERVER_NAME'].'/kindergarten-system/User/activity.php');
+	header('Location: /User/activity.php');
 	exit;
 	echo "Data Successfully Save";
 }						
 else
 {
-	header('Location: http://'.$_SERVER['SERVER_NAME'].'/kindergarten-system/User/activity.php');
+	header('Location: /User/activity.php');
 	exit;
   	echo"The query did not run";
 } 
